@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #ff8c00; /* Laranja */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+}
+
+.destinationContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.destination {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+  margin: 20px;
+  width: 220px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+.destinationImage {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #800080; /* Roxo */
+}
+
+.destinationName {
+  font-size: 1.5em;
+  color: #000;
+  margin: 10px 0;
+}
+
+.destinationPrice {
+  font-size: 1.2em;
+  color: #ff8c00; /* Laranja */
+  margin: 5px 0;
+}
+
+.bookingForm {
+  width: 300px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.bookingForm::before {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 300px;
+  background-color: #ff8c00; /* Laranja */
+  transform: rotate(45deg);
+  left: -180px;
+  bottom: 30px;
+  z-index: 1;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+}
+
+.bookingForm .heading {
+  font-size: 2em;
+  color: #000; /* Preto */
+  font-weight: 700;
+  margin: 5px 0 10px 0;
+  z-index: 2;
+}
+
+.bookingForm .inputContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.bookingForm .inputField {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #800080; /* Roxo */
+  margin: 10px 0;
+  color: black; /* Preto */
+  font-size: .8em;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.bookingForm .inputField:focus {
+  outline: none;
+  border-bottom: 2px solid #ff8c00; /* Laranja */
+}
+
+.bookingForm .inputField::placeholder {
+  color: #4b0082; /* Roxo Escuro */
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#button {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  border: none;
+  background-color: #800080; /* Roxo */
+  height: 30px;
+  color: white;
+  font-size: .8em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: #4b0082; /* Roxo mais escuro */
+}
+
+/* Estilos para o Rodapé */
+.footer {
+  background-color: #4b0082; /* Cor do fundo do rodapé */
+  color: white; /* Cor do texto do rodapé */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #ff8c00; /* Cor dos links no rodapé */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
