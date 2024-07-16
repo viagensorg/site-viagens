@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas</title>
+
+</head>  
+
+<style>
+    .square {
+      width: 500px;
+      height: 150px;
+      background-color: white;
+      display: flex;
+      align-items: right;
+      justify-content: right;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 10px 20px 10px gray;
+      border: 1px solid black;
+      margin-top: 10px;
+    }
+
+    .square-image {
+      width: 250px;
+      height: 150px;
+      background-image: url(ilhabela2.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image2 {
+      width: 250px;
+      height: 150px;
+      background-image: url(cabofrio.jpg);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image3 {
+      width: 250px;
+      height: 150px;
+      background-image: url(rio-de-janeiro-city.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image4 {
+      width: 250px;
+      height: 150px;
+      background-image: url(ouro-preto.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image5 {
+      width: 250px;
+      height: 150px;
+      background-image: url(curitiba.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image6 {
+      width: 250px;
+      height: 150px;
+      background-image: url(buenos-aires-argentina-casa-rosada.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image7 {
+      width: 250px;
+      height: 150px;
+      background-image: url(palacio-salvo.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image8 {
+      width: 250px;
+      height: 150px;
+      background-image: url(machu-picchu.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image9 {
+      width: 250px;
+      height: 150px;
+      background-image: url(santiago.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image10 {
+      width: 250px;
+      height: 150px;
+      background-image: url(lisboa.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image11 {
+      width: 250px;
+      height: 150px;
+      background-image: url(paris.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image12 {
+      width: 250px;
+      height: 150px;
+      background-image: url(roma.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image13 {
+      width: 250px;
+      height: 150px;
+      background-image: url(taj-mahal-india.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image14 {
+      width: 250px;
+      height: 150px;
+      background-image: url(cidade-proibida.jpg);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    .square-image15 {
+      width: 250px;
+      height: 150px;
+      background-image: url(hong-kong.webp);
+      background-size: cover;
+      margin-right: 16px;
+      position: absolute;
+      left: 0;
+    }
+
+    
+    .search-bar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    }
+
+
+    #search-input {
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+    }
+
+
+    #search-button {
+    width: 30%;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    }
+    #search-button:hover {
+    background-color: #3e8e41;
+    }
+
+  </style>
+
+    <div class="search-bar">
+        <form>     
+            <input type="text" id="search-input" placeholder="Faça sua Pesquisa">
+            <button id="search-button">Buscar</button>
+        </form>
+    </div>
+
+    <h1>Encontre as melhores viagens para você</h1>
+    <p>Os melhores destinos do Brasil a um clique de distância.</p>
+
+    <h1>Destinos proximos de você</h1>
+
+    <div class="square">
+        <div class="square-image"></div>
+            <div><h2>Ilhabela</h2>
+                São Paulo - Ilhabela <p></p>
+                <font color="red">Trajeto de Ônibus</font> <p></p>
+                R$ 1278,00
+                
+            </div>
+        </div>
+    </div>  
+
+    <p></p>
+
+       <div class="square">
+           <div class="square-image2"></div>
+               <div><h2><a href="Cabofrio.html">Cabo Frio</a></h2>
+                   São Paulo - Cabo Frio <p></p>
+                   R$ 1780,00
+               </div>
+           </div>
+        </div>
+    <p></p>
+
+    <div class="square">
+        <div class="square-image3"></div>
+            <div><h2>Rio de Janeiro</h2>
+                São Paulo - Rio de Janeiro <p></p>
+                R$ 2170,00
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="square">
+        <div class="square-image4"></div>
+            <div>
+
+                <h2>Ouro Preto</h2>
+                São Paulo - Belo Horizonte <p></p>
+                <font color="red">Belo Horizonte - Ouro Preto (Ônibus)</font> <p></p>
+                R$ 1790,00
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="square">
+        <div class="square-image5"></div>
+            <div><h2>Curitiba</h2>
+                São Paulo - Curitiba <p></p>
+                R$ 1696,00
+            </div>
+        </div>
+    </div>
+
+    <h1>America do Sul</h1>
+
+    <div class="square">
+        <div class="square-image6"></div>
+            <div><h2>Buenos Aires</h2>
+                São Paulo - Buenos Aires <p></p>
+                R$ 2247,00
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="square">
+        <div class="square-image7"></div>
+            <div><h2>Montevideu</h2>
+                São Paulo - Montevideu <p></p>
+                R$ 2189,00
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="square">
+        <div class="square-image8"></div>
+            <div><h2>Lima</h2>
+                São Paulo - Lima <p></p>
+                R$ 2696,00
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="square">
+        <div class="square-image9"></div>
+            <div><h2>Santiago</h2>
+                São Paulo - Santiago <p></p>
+                R$ 3125,00
+        </div>
+    </div>
+
+    <h1>Europa</h1>
+
+    <div class="square">
+        <div class="square-image10"></div>
+            <div><h2>Lisboa</h2>
+                São Paulo - Lisboa <p></p>
+                R$ 3249,00
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="square">
+        <div class="square-image11"></div>
+            <div><h2>Paris</h2>
+                São Paulo - Paris <p></p>
+                R$ 3999,99
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="square">
+        <div class="square-image12"></div>
+            <div><h2>Roma</h2>
+                São Paulo - Roma <p></p>
+                R$ 3671,00
+            </div>
+        </div>
+    </div>
+
+    <h1>Ásia</h1>
+
+    <div class="square">
+        <div class="square-image13"></div>
+            <div><h2>Delhi</h2>
+                São Paulo - Delhi <p></p>
+                R$ 5873,00
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="square">
+        <div class="square-image14"></div>
+            <div><h2>Pequim</h2>
+                São Paulo - Pequim <p></p>
+                R$ 6899,99
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="square">
+        <div class="square-image15"></div>
+            <div><h2>Hong Kong</h2>
+                São Paulo - Hong Kong <p></p>
+                R$ 7452,00
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
