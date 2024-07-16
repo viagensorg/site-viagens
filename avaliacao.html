@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Avaliação de Serviço  </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            background-color: #6A0DAD; /* Roxo */
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .title {
+            color: #6A0DAD; /* Roxo */
+            text-align: center;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 2.5em; /* Tamanho maior das estrelas */
+            color: #ccc;
+            cursor: pointer;
+        }
+        .rating input:checked ~ label,
+        .rating input:hover ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: #ff5e00ef; /* Laranja */
+        }
+        .comments {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .comments label {
+            margin-bottom: 5px;
+            color: #6A0DAD; /* Roxo */
+        }
+        .comments textarea {
+            padding: 10px;
+            border: 2px solid #6A0DAD; /* Roxo */
+            border-radius: 5px;
+            resize: vertical;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra à caixa */
+        }
+        .submit-btn {
+            background-color: rgb(255, 102, 0);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Avaliação de Serviço</h1>
+    </header>
+    <div class="container">
+        <h2 class="title">Por favor, avalie nosso serviço</h2>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+        </div>
+        <div class="comments">
+            <label for="comments">Deixe seu comentário:</label>
+            <textarea id="comments" rows="5" placeholder="Escreva seu comentário aqui..."></textarea>
+            <button class="submit-btn"><a href="index.html">Enviar Avaliação</a></button>
+        </div>
+    </div>
+</body>
+</html>

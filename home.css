@@ -135,19 +135,11 @@ body {
   background-color: #4b0082; /* Roxo mais escuro */
 }
 
-/* Estilos para o Rodapé */
-.footer {
-  background-color: #4b0082; /* Cor do fundo do rodapé */
-  color: white; /* Cor do texto do rodapé */
-  padding: 20px;
+footer {
+  background-color: #000000;
+  color: #ffffff;
   text-align: center;
-}
-
-.footer a {
-  color: #ff8c00; /* Cor dos links no rodapé */
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
+  padding: 1rem 0;
+  bottom: 0;
+  width: 100%;
 }
